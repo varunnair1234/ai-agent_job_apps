@@ -1,0 +1,35 @@
+# Copy to data/profile.yaml and fill in. Factual fields here are NEVER written by the LLM.
+first_name: Varun
+last_name: Nair
+email: you@example.com
+phone: "+1 555 555 5555"
+location: "City, State"
+linkedin: https://www.linkedin.com/in/your-handle
+github: https://github.com/your-handle
+website: ""
+school: "Your University"
+degree: "B.S. Computer Science"
+graduation: "June 2028"
+resume_path: data/resume.pdf
+
+# Answers for yes/no style questions. Be accurate: these are submitted as-is.
+work_authorized_us: "Yes"
+needs_sponsorship: "No"
+willing_to_relocate: "Yes"
+available_start: "June 2027"
+# Leave blank to force human review whenever asked.
+salary_expectation: ""
+# EEO / demographic questions: "Decline to self-identify" is the safe default.
+eeo_default: "Decline to self-identify"
+
+preferences:
+  include_title_keywords: ["intern", "internship", "co-op"]
+  must_match_any: ["software", "machine learning", "ml", "ai", "robotics", "data"]
+  exclude_keywords: ["senior", "staff", "principal", "manager", "phd"]
+  max_applications_per_company: 3
+
+# Companies to watch. ats = greenhouse | lever | ashby, token = the board slug in the careers URL.
+companies:
+  - { name: Figma, ats: greenhouse, token: figma }
+  - { name: Cloudflare, ats: greenhouse, token: cloudflare }
+  - { name: Palantir, ats: lever, token: palantir }
